@@ -1,5 +1,6 @@
 import React from 'react'
 import MenuCard from './MenuCard'
+import './Highlight.css'
 
 function Highlight() {
     const specials = [
@@ -25,19 +26,23 @@ function Highlight() {
         getImageSrc: () => require("../assets/lemon dessert.jpg")
     }]
   return (
-    <div>
-        <h1>This weeks specials!</h1>
-        <a href='/online-menu'>Online Menu</a>
-        {specials.map((special)=>(
-            <MenuCard
-            key={special.title}
-            title={special.title}
-            price={special.price}
-            description={special.description}
-            url={special.url}
-            imageSrc={special.getImageSrc()}
-            />
-        ))}
+    <div className='highlight-section'>
+        <div className='highlight-header'>
+            <h1>This weeks specials!</h1>
+            <span><a href='/online-menu'>Online Menu</a></span>
+        </div>
+        <div className='card'>
+            {specials.map((special)=>(
+                <MenuCard
+                key={special.title}
+                title={special.title}
+                price={special.price}
+                description={special.description}
+                url={special.url}
+                imageSrc={special.getImageSrc()}
+                />
+            ))}
+        </div>
     </div>
   )
 }

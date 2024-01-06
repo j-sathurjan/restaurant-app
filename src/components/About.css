@@ -1,0 +1,44 @@
+.about-section{
+    padding: 1%;
+}
+.about-content{
+    margin: 1%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.about-content h1{
+    color: #F4CE14;
+    padding-left: 10px;
+}
+.about-content h3{
+    color: #EE9972;
+    padding-left: 10px;
+}
+.about-content p{
+    color: #495E57;
+    width: 75%;
+}
+.about-images{
+    text-align: center;
+    margin-bottom: 35%;
+}
+.about-images> img{
+    width: 50%;
+}
+.top-image{
+    margin-top: 20px;
+}
+.bottom-image{
+    margin-left: -75%;
+    margin-bottom: -30%;
+}
+
+@media only screen and (min-width: 768px){
+    .about-section{
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+    .about-content{
+        margin-top: 20%;
+    }
+}

@@ -1,5 +1,6 @@
-import React from 'react'
-import CustomerRate from './CustomerRate'
+import React from 'react';
+import './Testimonials.css';
+import CustomerRate from './CustomerRate';
 
 function Testimonials() {
   const ratings =[
@@ -15,18 +16,40 @@ function Testimonials() {
       reviewText: 'high quality. innovative.',
       getImgSrc: () => require("../assets/user avatar.jpg")
     },
+    {
+      rating: 'Awesome',
+      name: 'Thanu',
+      reviewText: 'Good Product. respected peoples.',
+      getImgSrc: () => require("../assets/user avatar.jpg")
+    },
+    {
+      rating: 'Nice',
+      name: 'Loges',
+      reviewText: 'Nice employees to talk.',
+      getImgSrc: () => require("../assets/user avatar.jpg")
+    },{
+      rating: 'not bad',
+      name: 'Gobi',
+      reviewText: 'good.',
+      getImgSrc: () => require("../assets/user avatar.jpg")
+    }
   ]
   return (
-    <div>
-      {ratings.map((rating)=>(
-        <CustomerRate
-          key={rating.name}
-          rating={rating.rating}
-          name={rating.name}
-          reviewText={rating.reviewText}
-          imageSrc={rating.getImgSrc()}
-        />
-      ))}
+    <div className='testimonial-section'>
+      <div className='testimonial-header'>
+            <h1>Testimonials</h1>
+      </div>
+      <div className='testimonial-content'>
+        {ratings.map((rating)=>(
+          <CustomerRate
+            key={rating.name}
+            rating={rating.rating}
+            name={rating.name}
+            reviewText={rating.reviewText}
+            imageSrc={rating.getImgSrc()}
+          />
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,7 +1,46 @@
 *{
   margin:0;
   padding: 0;
+  box-sizing: border-box;
 }
 .App {
   text-align: center;
+  margin-left: 50px;
+}
+.header-section{
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 98%;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar{
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 98%;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px){
+  .header-section{
+    width: 23%;
+    float: left;
+    margin-top: 0;
+  }
+  .nav-bar{
+    width: 73%;
+  }
+  .nav-bar .links{
+    flex-direction: row;
+    text-wrap: nowrap;
+    margin-top: 10px;
+  }
+  .nav-bar .links li{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+  }
 }

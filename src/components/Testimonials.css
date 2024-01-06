@@ -1,0 +1,36 @@
+.testimonial-section{
+    background-color: #495E57EE;
+    padding: 1%;
+}
+.testimonial-header{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.testimonial-content{
+    margin-bottom: 50px;
+}
+.review-container{
+    background-color: #EE9972;
+    margin: 10px;
+    padding: 10px;
+}
+.review-container > h5,p{
+    margin-left: 10px;
+}
+.rate-user{
+    display:flex;
+}
+.rate-user img{
+    border-radius: 15%;
+    margin: 10px;
+}
+.rate-user h5{
+    margin-top: 25px;
+}
+@media only screen and (min-width: 768px){
+    .testimonial-content{
+        display:grid;
+        grid-template-columns:repeat(4,minmax(0,1fr));
+    }
+}

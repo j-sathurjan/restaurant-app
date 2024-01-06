@@ -1,0 +1,23 @@
+.links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+.links li{
+    margin-top: 10px;
+    color: #000;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .links li a{
+    text-decoration: none;
+    color: #000000;
+  }
+  .links li a:hover{
+    color: #F4CE14EE;
+  }

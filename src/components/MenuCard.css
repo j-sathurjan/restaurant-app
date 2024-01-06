@@ -1,0 +1,46 @@
+.menu-card{
+    border-radius: 15px;
+    background: #D9D9D9;
+    width:266px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.menu-card:hover{
+    width:270px;
+    border: #000000 solid 2px;
+}
+.menu-card img{
+    height:180px;
+    width:266px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.menu-card-header{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.menu-card-header h3{
+    margin-top: 10px;
+    margin-left: 23px;
+    color: #000000;
+    width: max-content;
+}
+.menu-card-header h5{
+    margin-top: 10px;
+    margin-left: 55px;
+    color: #EE9972;
+}
+.menu-card-description{
+    margin-left: 50px;
+}
+.menu-card p{
+    margin-left: 23px;
+    margin-right: 23px;
+    color: #495E57EE;
+}
+.menu-card a{
+    margin-left: 23px;
+    margin-right: 23px;
+    text-decoration: none;
+    color: #000000;
+}

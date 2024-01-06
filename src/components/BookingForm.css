@@ -1,0 +1,54 @@
+.booking-component{
+    margin: 20px;
+}
+.booking-component h1{
+    color: #F4CE14EE;
+    margin-bottom: 20px;
+}
+.form-content img{
+    width: 95%;
+    border-radius: 5%;
+    margin-top: 20px;
+}
+.form-content fieldset{
+    margin-right: 20px;
+    color: #EDEFEE;
+    justify-content: center;
+}
+.booking-form{
+    display: grid;
+    max-width: 200px;
+    gap: 10px;
+    margin: 5%;
+}
+.booking-form label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #EDEFEE;
+}
+.booking-form input[type="submit"]{
+    background-color: #F4CE14EE;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.booking-form input[type="submit"]:hover{
+    background-color: #495E57EE;
+    color: #EDEFEE;
+}
+.booking-form input[type="submit"]:disabled{
+    background-color: #F4CE14EE;
+    color: black
+}
+
+@media only screen and (min-width: 768px) {
+    .booking-component h1{
+        text-align: center;
+    }
+    .form-content{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        align-items: center;
+    }
+}
